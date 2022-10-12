@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>IMAGE</title>
+</head>
+
+<body>
+  <canvas id="demo"></canvas>
+
+  <script src="./text-image/text-image.iife.js"></script>
+
+  <script>
+    textImage.createTextImage({
+      canvas: document.getElementById('demo'),
+      raduis: 7,
+      isGray: true,
+      source: {
+        img: './assets/1.png',
+      },
+    });
+  </script>
+</body>
+
+</html>
